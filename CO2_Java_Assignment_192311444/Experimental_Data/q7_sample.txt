@@ -1,0 +1,15 @@
+SAMPLE / SIMULATED OUTPUT — NOT MEASURED ON STUDENT LAPTOP
+fields,rounds,original_concat_ns,redesigned_builder_ns
+10,500,1850000,610000
+50,100,9800000,790000
+100,50,18100000,810000
+250,20,36200000,940000
+
+Illustrative improvement percentages:
+10 fields: 67.0%
+50 fields: 91.9%
+100 fields: 95.5%
+250 fields: 97.4%
+
+These are demonstration values only. Run StringRedesign.java on the student's computer
+and replace these values before claiming experimental validation.

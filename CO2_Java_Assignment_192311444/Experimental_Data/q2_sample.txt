@@ -1,0 +1,7 @@
+SAMPLE / SIMULATED OUTPUT — NOT MEASURED ON STUDENT LAPTOP
+size,array_get_ns,linked_get_ns,array_iter_ns,linked_iter_ns,array_front_batch_ns,linked_front_batch_ns
+1000,48000,1720000,39000,52000,620000,85000
+10000,51000,16400000,410000,530000,8200000,190000
+50000,53000,81100000,2050000,2790000,53100000,310000
+
+Up Next dequeue order: 1, 2, 3

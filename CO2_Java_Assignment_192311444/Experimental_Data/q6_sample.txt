@@ -1,0 +1,8 @@
+SAMPLE / ILLUSTRATIVE FUNCTIONAL OUTPUT
+Meena(S1) Kumar(S1) Lata(S2) Ravi(S3) John(S3) Asha(S5)
+PriorityQueue add/poll are O(log n); peek is O(1).
+
+Complexity demonstration (not measured timings):
+n=1,000: insertion and removal scale with log2(n) ≈ 10
+n=10,000: insertion and removal scale with log2(n) ≈ 13
+n=50,000: insertion and removal scale with log2(n) ≈ 16

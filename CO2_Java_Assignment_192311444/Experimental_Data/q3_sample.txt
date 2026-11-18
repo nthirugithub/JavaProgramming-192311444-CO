@@ -1,0 +1,9 @@
+SAMPLE / ILLUSTRATIVE FUNCTIONAL OUTPUT
+Repeated same ID -> unique count: 2
+Same ID different name -> unique count: 2
+TreeSet sample size: 1
+Corrected equals/hashCode use immutable regNo as identity.
+
+Note: The assignment's supplied pre-fix class overrides equals() but not hashCode().
+Its HashSet output is not deterministic across JVM runs; record the actual pre-fix result
+from your own execution rather than treating a sample as guaranteed.

@@ -1,0 +1,8 @@
+SAMPLE / SIMULATED OUTPUT — NOT MEASURED ON STUDENT LAPTOP
+workload,fields,tickets,String_ns,StringBuilder_ns,StringBuffer_ns
+1,6,1,18400,9200,11600
+2,50,10000,482000000,71400000,96300000
+3,200,2000,391000000,36200000,51800000
+
+Illustrative interpretation: String concatenation becomes increasingly expensive as the
+number of fields grows. Builder is fastest in these example figures; Buffer adds synchronization.
