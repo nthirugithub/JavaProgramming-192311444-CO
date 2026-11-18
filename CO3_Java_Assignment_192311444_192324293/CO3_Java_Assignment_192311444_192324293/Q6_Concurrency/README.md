@@ -1,0 +1,4 @@
+# Q6 – Deadlock and producer-consumer (7)
+put waits while full; take waits while empty. while handles spurious wakeups and conditions changing before reacquisition. wait must be called while owning monitor and releases it; sleep does not release locks. notifyAll wakes all waiters to recheck; notify can wake a thread unable to proceed. Capacity invariant 0≤count≤5; expected token sum 210.
+
+Deadlock four conditions: mutual exclusion, hold-and-wait, no preemption, circular wait. Consistent wallet-ID lock ordering removes circular wait. Use opposite-order nested locking only in a controlled demonstration with timeout/watchdog. Alternative ArrayBlockingQueue(5) encapsulates bounded synchronization; put/take O(1) typical, O(5) storage. tryLock(timeout) prevents indefinite waiting but needs timeout/retry handling.
