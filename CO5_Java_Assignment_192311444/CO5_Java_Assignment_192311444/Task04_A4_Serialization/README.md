@@ -1,0 +1,6 @@
+# A4 – Serialization (4 marks)
+The live JDBC `Connection` must be transient: it is process/session state, not durable domain data, and is not serializable. Password should not be persisted in a serialized snapshot; mark transient and store credentials using a secure authentication design. Hostel serialization traverses its reachable serializable object graph: Hostel → list → Room objects → resident lists → Resident objects. Shared references are preserved by the serialization handle table; every non-transient reachable object must be serializable.
+
+When phoneNumber is added, an old stream read into the new class with matching explicit serialVersionUID generally assigns the new reference field its default value (`null`) if absent in the stream. If computed/default serialVersionUID changes incompatibly, InvalidClassException may occur. Explicit UID permits controlled compatibility but does not automatically migrate semantic data.
+
+CSV/JSON are more inspectable and language-independent but require explicit mapping/parsing. Both generally scale O(n) time and O(n) output/input memory depending on streaming strategy. Java serialization is convenient for object graphs but couples files to Java class structure and versioning; text formats handle optional/new fields more flexibly if parsers supply defaults.

@@ -1,0 +1,1 @@
+Place the downloaded MySQL Connector/J JAR here. Do not commit database credentials.
